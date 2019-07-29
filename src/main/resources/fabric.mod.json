@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "fissurecraft",
+  "version": "${version}",
+
+  "name": "Fissure Craft",
+  "description": "A mod that lets you harness the fissure between worlds",
+  "authors": [
+    "VoidCloud"
+  ],
+  "contact": {
+    "sources": "Not yet"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/fissurecraft/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.hypatech.FissureCraft"
+    ]
+  },
+  "mixins": [
+    "fissurecraft.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.4.0",
+    "fabric": "*"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
