@@ -17,6 +17,9 @@
 
   "environment": "*",
   "entrypoints": {
+    "client": [
+      "io.github.hypatech.FissureCraftClient"
+    ],
     "main": [
       "io.github.hypatech.FissureCraft"
     ]

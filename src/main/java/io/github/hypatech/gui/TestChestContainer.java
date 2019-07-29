@@ -36,8 +36,7 @@ public class TestChestContainer extends Container {
 
     @Override
     public boolean canUse(PlayerEntity playerEntity) {
-        return this.context.run((world, blockPos) -> {
-            return world.getBlockState(blockPos).getBlock() == FissureCraft.TEST_BLOCK && playerEntity.squaredDistanceTo(blockPos.getX() + .5D, blockPos.getY() + .5D, blockPos.getZ() + .5D) < 64D;
-        }, true);
+        return this.context.run((world, blockPos) ->
+                world.getBlockState(blockPos).getBlock() == FissureCraft.TEST_BLOCK && playerEntity.squaredDistanceTo(blockPos.getX() + .5D, blockPos.getY() + .5D, blockPos.getZ() + .5D) < 64D, true);
     }
 }

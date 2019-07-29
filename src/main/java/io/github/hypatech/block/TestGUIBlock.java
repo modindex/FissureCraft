@@ -23,9 +23,7 @@ public class TestGUIBlock extends Block {
     @Override
     public boolean activate(BlockState state, World world, BlockPos blockPos, PlayerEntity playerEntity, Hand hand, BlockHitResult hitResult){
         if(!world.isClient){
-
             ContainerProviderRegistry.INSTANCE.openContainer(FissureCraft.TEST_CHEST_CONTAINER, playerEntity, buf -> buf.writeBlockPos(blockPos));
-        } else{
         }
 
         return true;
