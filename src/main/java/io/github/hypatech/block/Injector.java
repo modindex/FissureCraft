@@ -29,7 +29,7 @@ public class Injector extends Block implements InventoryProvider {
 
     @Override
     public SidedInventory getInventory(BlockState state, IWorld world, BlockPos pos) {
-        if(world.getBlockEntity(pos) instanceof InjectorEntity && world.getBlockEntity(pos) != null) {
+        if(world.getBlockEntity(pos) instanceof InjectorEntity) {
             return (SidedInventory) world.getBlockEntity(pos);
         }
 
