@@ -1,5 +1,6 @@
 package io.github.hypatech.block.entity;
 
+import io.github.hypatech.FissureCraft;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.inventory.Inventories;
@@ -10,8 +11,9 @@ import net.minecraft.util.DefaultedList;
 public class InjectorEntity extends BlockEntity implements ImplementedInventory {
     private DefaultedList<ItemStack> inventoryList;
 
-    public InjectorEntity(BlockEntityType<?> blockEntityType_1) {
-        super(blockEntityType_1);
+
+    public InjectorEntity() {
+        super(FissureCraft.INJECTOR_ENTITY);
         inventoryList = DefaultedList.ofSize(2, ItemStack.EMPTY);
     }
 
